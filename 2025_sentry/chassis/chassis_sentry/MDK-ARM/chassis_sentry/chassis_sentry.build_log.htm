@@ -1,0 +1,91 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.14.1
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: oew zifang11@outlook.com, wdaw, LIC=QF82M-XA4XR-KPQZY-I5L9R-Q56IM-CPT9N
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.24.1
+Toolchain Path:  D:\k5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.26.0
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+D:\×ÀÃæ\chassis\chassis_sentry\MDK-ARM\chassis_sentry.uvprojx
+Project File Date:  02/21/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\k5\ARM\ARMCC\Bin'
+Build target 'chassis_sentry'
+compiling chassis_task.c...
+../motor_3508/motor_define.h(44): warning:  #1295-D: Deprecated declaration Chassis_PID_Init_All - give arg types
+  void Chassis_PID_Init_All();
+../motor_3508/motor_define.h(47): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\chassis\chassis_move.h(7): warning:  #1295-D: Deprecated declaration Chassis_Remote_Control_normal - give arg types
+  void Chassis_Remote_Control_normal();
+..\chassis\chassis_move.h(8): warning:  #1295-D: Deprecated declaration Chassis_Remote_Control_gyro - give arg types
+  void Chassis_Remote_Control_gyro();
+..\chassis\chassis_move.h(9): warning:  #1295-D: Deprecated declaration Find_Angle - give arg types
+  float Find_Angle();
+..\chassis\chassis_move.h(10): warning:  #1295-D: Deprecated declaration Chassis_Solution - give arg types
+  void Chassis_Solution();
+..\chassis\chassis_move.h(11): warning:  #1295-D: Deprecated declaration Chassis_Motor_Solution - give arg types
+  void Chassis_Motor_Solution();
+..\chassis\chassis_move.h(12): warning:  #1295-D: Deprecated declaration Chassis_PID_Calc - give arg types
+  void Chassis_PID_Calc();
+..\chassis\chassis_move.h(14): warning:  #1295-D: Deprecated declaration Chassis_Move - give arg types
+  void Chassis_Move();
+..\chassis\chassis_move.h(15): warning:  #1295-D: Deprecated declaration chassis_remote_control - give arg types
+  void chassis_remote_control();
+..\chassis\chassis_move.h(16): warning:  #1295-D: Deprecated declaration Chassis_Move_Auto - give arg types
+  void Chassis_Move_Auto();
+..\chassis\chassis_move.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\chassis\motor_pid_init.h(4): warning:  #1295-D: Deprecated declaration yaw_PID_Init - give arg types
+  void yaw_PID_Init();
+..\chassis\motor_pid_init.h(5): warning:  #1295-D: Deprecated declaration Chassis_PID_Init_All - give arg types
+  void Chassis_PID_Init_All();
+..\chassis\motor_pid_init.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+../motor_9025/LK_9025.h(29): warning:  #1295-D: Deprecated declaration Motor_LK9025_angle_get - give arg types
+  void Motor_LK9025_angle_get();
+../motor_9025/LK_9025.h(48): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\chassis\chassis_task.c(226): warning:  #1-D: last line of file ends without a newline
+  }
+..\chassis\chassis_task.c: 18 warnings, 0 errors
+linking...
+Program Size: Code=51352 RO-data=1668 RW-data=532 ZI-data=24116  
+FromELF: creating hex file...
+"chassis_sentry\chassis_sentry.axf" - 0 Error(s), 18 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.1.pack
+                ARM::CMSIS:CORE:5.0.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.1
+
+<h2>Collection of Component include folders:</h2>
+  D:\×ÀÃæ\chassis\chassis_sentry\MDK-ARM\RTE
+  D:\k5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include
+  D:\k5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.1
+</pre>
+</body>
+</html>

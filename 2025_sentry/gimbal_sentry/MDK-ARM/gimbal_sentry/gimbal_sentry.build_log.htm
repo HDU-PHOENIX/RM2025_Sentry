@@ -1,0 +1,83 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.14.1
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: oew zifang11@outlook.com, wdaw, LIC=QF82M-XA4XR-KPQZY-I5L9R-Q56IM-CPT9N
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.24.1
+Toolchain Path:  D:\k5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.26.0
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+D:\gimbal\gimbal_sentry\MDK-ARM\gimbal_sentry.uvprojx
+Project File Date:  02/21/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\k5\ARM\ARMCC\Bin'
+Build target 'gimbal_sentry'
+compiling INS_task.c...
+../motor_define/LK_9025.h(26): warning:  #1295-D: Deprecated declaration Motor_LK9025_angle_get - give arg types
+  void Motor_LK9025_angle_get();
+../motor_define/LK_9025.h(45): warning:  #1-D: last line of file ends without a newline
+  #endif
+../baspcan/baspcan.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif
+../vision/vision.h(50): warning:  #1295-D: Deprecated declaration vision_transmit - give arg types
+  void vision_transmit();
+../vision/vision.h(51): warning:  #1295-D: Deprecated declaration vision_transmit_judge - give arg types
+  void vision_transmit_judge();
+../vision/vision.h(53): warning:  #1-D: last line of file ends without a newline
+  #endif
+../motor_define/motor_define.h(45): warning:  #1295-D: Deprecated declaration Chassis_PID_Init_All - give arg types
+  void Chassis_PID_Init_All();
+../motor_define/motor_define.h(48): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\IMU\INS_task.c(413): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                angle_for_9025=computer_from.zimiao.big_yaw/6.28318*360;                                        
+..\IMU\INS_task.c(427): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                                        motor_yaw.Set_Angle=(computer_from.zimiao.big_yaw-0)/6.2831852*8191+2674;
+..\IMU\INS_task.c(505): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                                        motor_yaw.Set_Angle=(computer_from.zimiao.big_yaw-0)/6.2831852*8191+2674;
+..\IMU\INS_task.c(176): warning:  #550-D: variable "accel_fliter_1"  was set but never used
+  static fp32 accel_fliter_1[3] = {0.0f, 0.0f, 0.0f};
+..\IMU\INS_task.c(177): warning:  #550-D: variable "accel_fliter_2"  was set but never used
+  static fp32 accel_fliter_2[3] = {0.0f, 0.0f, 0.0f};
+..\IMU\INS_task.c(179): warning:  #177-D: variable "fliter_num"  was declared but never referenced
+  static const fp32 fliter_num[3] = {1.929454039488895f, -0.93178349823448126f, 0.002329458745586203f};
+..\IMU\INS_task.c: 14 warnings, 0 errors
+linking...
+Program Size: Code=52004 RO-data=648 RW-data=804 ZI-data=27188  
+FromELF: creating hex file...
+"gimbal_sentry\gimbal_sentry.axf" - 0 Error(s), 14 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.1.pack
+                ARM::CMSIS:CORE:5.0.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.1
+
+<h2>Collection of Component include folders:</h2>
+  D:\gimbal\gimbal_sentry\MDK-ARM\RTE
+  D:\k5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include
+  D:\k5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.1
+</pre>
+</body>
+</html>
